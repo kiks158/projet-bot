@@ -7,16 +7,32 @@ public class boussole {
 	angle  AglRobot;
 	angle palais; // l angle que l on  doit prendre pour rejoindre le palais 
 	position rbt;
-	etat A1;
-	
+	etat A1,A2,A3,A4;
+	etat B1,B2,B3,B4;
+	etat C1,C2,C3,C4;
+	etat D1,D2,D3,D4;
 	
 	public boussole(char x, int y) {
 		AglNord.setAgl(0);
 		AglSud.setAgl(180);
 		AglRobot.getAgl();
 		rbt= new position(x,y);
-		A1 = new etat(1,'a');
-		
+		A1.setLigne('a'); A1.setCol(1);
+		A2.setLigne('a'); A2.setCol(2);
+		A3.setLigne('a'); A3.setCol(3);
+		A4.setLigne('a'); A4.setCol(4);
+		B1.setLigne('b'); B1.setCol(1);
+		B2.setLigne('b'); B2.setCol(2);
+		B3.setLigne('b'); B3.setCol(3);
+		B4.setLigne('b'); B4.setCol(4);
+		C1.setLigne('c'); C1.setCol(1);
+		C2.setLigne('c'); C2.setCol(2);
+		C3.setLigne('c'); C3.setCol(3);
+		C4.setLigne('c'); C4.setCol(4);
+		D1.setLigne('d'); D1.setCol(1);
+		D2.setLigne('d'); D2.setCol(2);
+		D3.setLigne('d'); D3.setCol(3);
+		D4.setLigne('d'); D4.setCol(4);
 	}
 	public angle pointe() {
 		return this.AglRobot;
@@ -26,9 +42,6 @@ public class boussole {
 		A1.enterState();
 		
 	}
-	
-	
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
