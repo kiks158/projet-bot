@@ -1,0 +1,27 @@
+package endgame;
+
+public abstract class etat {
+	boolean in;
+	int colonne;
+	char ligne;
+
+	public etat(int col, char ligne) {
+		in=false;
+		colonne= col;
+		this.ligne= ligne;
+	}
+	public void setLigne(char l) {
+		ligne = l;
+	}
+	public void setCol(int c) {
+		colonne=c;
+	}
+	public void enterState() {
+		in=true;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
