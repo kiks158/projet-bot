@@ -1,0 +1,43 @@
+//angle
+package endgame;
+//import static java.lang.Math.floorMod;
+public final class angle {
+	int Agl;
+	
+	
+	public angle(int i) {
+		Agl= i;
+	}
+	public int getAgl() {
+		return Agl;
+	}
+	public void setAgl(int i) {
+		Agl= i;
+	}
+	public angle addAgl(angle rbt, angle palais) {
+		if(rbt.getAgl()+palais.getAgl()<=360) 
+			return new angle(rbt.getAgl()+palais.getAgl());		
+		else {
+			int f =rbt.getAgl()+palais.getAgl();
+			angle F = new angle(f);
+			return F;
+		}}
+	public angle sousAgl(angle rbt, angle palais) {
+		if(rbt.getAgl()-palais.getAgl()>=0) 
+			return new angle(rbt.getAgl()-palais.getAgl());		
+		else {
+			int f =rbt.getAgl()-palais.getAgl()+360;
+			angle F = new angle(f);
+			return F;}
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//double i = -47;
+     //System.out.println(i%=360);
+//		int i= Math.floorMod(-20,360);
+//		System.out.print(i);
+	}
+
+}
