@@ -1,0 +1,37 @@
+//boussole
+package endgame;
+
+public class boussole {
+	angle AglNord;
+	angle AglSud;
+	angle  AglRobot;
+	angle palais; // l angle que l on  doit prendre pour rejoindre le palais 
+	position rbt;
+	etat A1;
+	
+	
+	public boussole(char x, int y) {
+		AglNord.setAgl(0);
+		AglSud.setAgl(180);
+		AglRobot.getAgl();
+		rbt= new position(x,y);
+		A1 = new etat(1,'a');
+		
+	}
+	public angle pointe() {
+		return this.AglRobot;
+	}
+	public void stepinA1() {
+		
+		A1.enterState();
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
